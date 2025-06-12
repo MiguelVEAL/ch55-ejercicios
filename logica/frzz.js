@@ -14,7 +14,7 @@ Si no es múltiplo de ninguno, imprime el número tal cual
 
 
 
-
+/*
 let counter = 1;
 do{  
     if (counter%3 === 0 && counter%5 === 0){
@@ -28,4 +28,26 @@ do{
     
   }
 counter++;
-}while (counter <= 100 );
+}while (counter <= 100 );*/
+
+
+const fizzBuzz = (counterNumber) => {
+    let counter = 1
+do{  
+    if (counter%3 === 0 && counter%5 === 0){
+    console.log ("FizzBuzz");
+  } else if (counter%5 === 0){
+    console.log("Buzz");
+   } else if (counter%3 === 0 ){
+    console.log("Fizz");
+   }else {
+    console.log(counter);
+    
+  }
+counter++;
+}while (counter <= counterNumber);
+}
+console.log ("200 Veces")
+fizzBuzz(200)
+console.log ("50 Veces")
+fizzBuzz(50)
